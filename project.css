@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins" sans-serif;
+  line-height: 1.7;
+  font-size: 13px;
+  color: white;
+}
+.nav {
+  width: 100%;
+  height: 85px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: brown;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 0 2px 0 rgb(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.nav a {
+  padding: 12px;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: rgb(70, 103, 146);
+}
+h2 {
+  color: white;
+  font-size: 40px;
+}
+.intro p {
+  font-size: 30px;
+  color: brown;
+}
+.intro {
+  padding: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  height: 100vh;
+}
+.project {
+  width: auto;
+  padding: 20px;
+  background-color: rgb(39, 73, 104);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.item {
+  background-color: rgb(2, 19, 35);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.item p {
+  padding: 10px;
+  font-size: 20px;
+}
+.item:hover p::before {
+  content: "<";
+  color: brown;
+}
+.item:hover p::after {
+  content: "/>";
+  color: brown;
+}
+
+.item:nth-of-type(1) {
+  grid-column: 1/4;
+  background: local;
+  text-align: center;
+  text-decoration: underline;
+}
+.item img {
+  height: 320px;
+  width: auto;
+}
+.itemlist {
+  grid-column: 1/4;
+  text-align: center;
+  background: local;
+}
+.itemlist a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+}
+.itemlist a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: brown;
+}
+
+.contact {
+  background-color: black;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.contact p {
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+}
+.links {
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+}
+.social {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  margin: 12px;
+}
+
+.social a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.social img {
+  border: none;
+  filter: invert(100);
+}
+
+.social a:hover {
+  opacity: 0.7;
+}
+.end {
+  display: flex;
+  justify-content: end;
+  background-color: black;
+  border-top: 2px solid brown;
+  height: 10vh;
+  align-items: center;
+}
+.end p {
+  font-size: 20px;
+}
